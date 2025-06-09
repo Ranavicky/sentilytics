@@ -1,6 +1,11 @@
 import streamlit as st
+
+st.set_page_config(page_title="Sentilytics", layout="centered")
+
 from transformers import pipeline
 import matplotlib.pyplot as plt
+
+# rest of your code...
 
 @st.cache(allow_output_mutation=True)
 def load_pipeline():
